@@ -291,6 +291,31 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -laR artifacts/
 
+      - name: Create release notes
+        run: |
+          cat > release-notes.md << 'EOF'
+          # CADHY v${{ steps.version.outputs.version }}
+
+          > First Beta Release - Hydraulic CAD System
+
+          ## Installation
+
+          Download the installer for your platform below and run it.
+
+          **Windows:** `.exe` installer
+          **macOS:** `.dmg` disk image
+          **Linux:** `.AppImage` executable
+
+          ## What's Included
+
+          - CAD operations: Boolean, Fillet, Chamfer, Shell
+          - Export formats: STEP, STL, OBJ, GLB
+          - Measurement tools
+          - 3D viewport with OpenCASCADE backend
+
+          See [CHANGELOG](https://github.com/crhistian-cornejo/CADHY/blob/main/CHANGELOG.md) for full details.
+          EOF
+
       - name: Get version
         id: version
         run: |
@@ -346,8 +371,11 @@ jobs:
             artifacts/macos-binaries-x64/**/*
             artifacts/linux-binaries/**/*
             artifacts/latest.json
-          generate_release_notes: true
+          generate_release_notes: false
+          body_path: ${{ github.workspace }}/release-notes.md
           draft: false
           prerelease: ${{ contains(github.ref, 'alpha') || contains(github.ref, 'beta') || contains(github.ref, 'rc') }}
+          # IMPORTANT: Don't include source code
+          include_source_code: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
