@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CADHY - AI-Powered Hydraulic Engineering Software" />
+    <meta name="theme-color" content="#0ea5e9" />
+
+    <title>CADHY - Hydraulic Analysis Software</title>
+
+    <link rel="icon" type="image/png" href="/cadhy-releases/favicon.png" />
+    <link rel="apple-touch-icon" href="/cadhy-releases/logo.png" />
+
+    <!-- Preconnect to font origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Inter font for UI -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- JetBrains Mono for code -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Prevent theme flash -->
+    <script>
+      const savedTheme = localStorage.getItem('cadhy-web-theme');
+      const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      const theme = savedTheme || (prefersDark ? 'dark' : 'light');
+      document.documentElement.classList.add(theme);
+    </script>
+    <script type="module" crossorigin src="/cadhy-releases/assets/index-CSHAnyjh.js"></script>
+    <link rel="stylesheet" crossorigin href="/cadhy-releases/assets/index-CKh-DkJ6.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
