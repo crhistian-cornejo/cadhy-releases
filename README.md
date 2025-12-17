@@ -10,8 +10,8 @@
 
 [![Release](https://img.shields.io/github/v/release/crhistian-cornejo/cadhy-releases?style=for-the-badge&logo=github&label=Latest&color=0891b2)](https://github.com/crhistian-cornejo/cadhy-releases/releases/latest)
 [![Downloads](https://img.shields.io/github/downloads/crhistian-cornejo/cadhy-releases/total?style=for-the-badge&logo=github&color=6366f1)](https://github.com/crhistian-cornejo/cadhy-releases/releases)
-[![Build](https://img.shields.io/github/actions/workflow/status/crhistian-cornejo/CADHY/release-app.yml?style=for-the-badge&logo=github-actions&label=Build)](https://github.com/crhistian-cornejo/cadhy-releases/releases)
-[![Platform](https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-22c55e?style=for-the-badge&logo=apple)](https://github.com/crhistian-cornejo/cadhy-releases/releases/latest)
+[![macOS Signed](https://img.shields.io/badge/macOS-Signed-22c55e?style=for-the-badge&logo=apple)](https://github.com/crhistian-cornejo/cadhy-releases/releases/latest)
+[![Platform](https://img.shields.io/badge/Platform-Win%20%7C%20Mac%20%7C%20Linux-6366f1?style=for-the-badge)](https://github.com/crhistian-cornejo/cadhy-releases/releases/latest)
 
 [**Download**](https://github.com/crhistian-cornejo/cadhy-releases/releases/latest) ·
 [**Documentation**](https://crhistian-cornejo.github.io/cadhy-releases/#/docs) ·
