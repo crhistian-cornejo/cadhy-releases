@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/crhistian-cornejo/cadhy-releases/main/assets/favicon.svg" alt="CADHY Logo" width="100" height="100">
+<img src="https://raw.githubusercontent.com/crhistian-cornejo/cadhy-releases/main/assets/logo.png" alt="CADHY Logo" width="128" height="128">
 
 # CADHY
 
