@@ -6,6 +6,8 @@ on:
       - 'v*'
   release:
     types: [published]
+  repository_dispatch:
+    types: [build-release]
   workflow_dispatch:
     inputs:
       version:
@@ -321,6 +323,8 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             echo "version=${{ github.event.inputs.version }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event_name }}" == "repository_dispatch" ]; then
+            echo "version=${{ github.event.client_payload.version }}" >> $GITHUB_OUTPUT
           elif [ "${{ github.event_name }}" == "release" ]; then
             echo "version=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
           else
