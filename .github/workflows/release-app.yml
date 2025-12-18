@@ -67,7 +67,6 @@ jobs:
 
       - name: Install Dependencies
         working-directory: source
-        working-directory: source
         run: bun install --frozen-lockfile
 
       - name: Build App
@@ -152,7 +151,7 @@ jobs:
 
       # Apple Code Signing
       - name: Import Apple Certificate
-        if: ${{ secrets.APPLE_CERTIFICATE != '' }}
+        if: secrets.APPLE_CERTIFICATE != ''
         env:
           APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}
           APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
